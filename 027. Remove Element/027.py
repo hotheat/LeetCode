@@ -1,6 +1,8 @@
 class Solution:
     def removeElement(self, nums, val):
         """
+        Given nums = [3,2,2,3], val = 3,
+        return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.
         :type nums: List[int]
         :type val: int
         :rtype: int
