@@ -16,6 +16,6 @@ class Solution:
         return max(max1s, cnt1s)
 
 
-nums = [1, 1, 0, 1, 1,]
+nums = [1, 1, 0, 1, 1, ]
 s = Solution()
 print(s.findMaxConsecutiveOnes(nums))
