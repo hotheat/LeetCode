@@ -3,7 +3,7 @@
 better1.py
 
 1. collections.Counter() 返回类似字典的结构，value 是元素的出现次数。532 题中也有用到
-2. collections.Counter() 的返回值可以直接做交集运算，这是字典不具备的
+2. collections.Counter() 的返回值可以直接做交集运算，这是字典不具备的。elements() 方法返回 [key] 乘以 value 的列表
 
 ```python
 In [5]: c1 = [1, 2, 2, 3]
