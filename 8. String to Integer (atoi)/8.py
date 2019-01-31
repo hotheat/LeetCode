@@ -11,7 +11,7 @@ class Solution:
                 num = ''.join((num, v))
                 continue
             # 符合数字
-            if 48 <= ord(v) <= 57:
+            if v.isdigit():
                 num = ''.join((num, v))
             # 保证数字是连续出现
             elif ord(v) == 32 and not num:
