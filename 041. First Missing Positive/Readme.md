@@ -1,6 +1,6 @@
 `041.py` 时间复杂度 $O(nlogn)$，先排序，初始化 n=1，遍历列表，如果 i 与 n 相同，那么 n 累加，达到目的，但是不符合 $O(n)$ 的题目要求。
 
-`better.py` 时间复杂度 $O(n)$，
+`better.py` 时间复杂度 $O(n)​$，
 
 第一遍遍历，使数组中小于等于 0 的数标记为整数最大值
 
@@ -9,3 +9,5 @@
 第三遍遍历，查找数组，只要该位置上是负数，代表数组中有这个整数，直到遇到第一个正数。代表该位置没有被标记。
 
 最后一行 return 是指数组中不存在缺失整数时，返回数组长度最大值。
+
+参考 [https://www.youtube.com/watch?v=8DqewGsVNkI](https://www.youtube.com/watch?v=8DqewGsVNkI)
