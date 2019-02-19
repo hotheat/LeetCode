@@ -7,7 +7,7 @@
 
 当前的最小代价 dp(i) 等于 i-1 位置的最小代价加上 cost[i-1] 和 i-2 位置的最小代价加上 cost[i-2] 中的最小值，位置 i 处的代价不用进行计算。
 
-dp(i) 代表爬到第 n 阶处的最小代价，**有两种可能性，要么从 i-1 阶爬上来，要么从 i-2 阶爬上来**。
+dp(i) 代表爬到第 i 阶处的最小代价，**有两种可能性，要么从 i-1 阶爬上来，要么从 i-2 阶爬上来**。
 
 `dp(i) = min(dp(i-1) + cost[i-1], dp(i-2) + cost[i-2])`
 
@@ -27,4 +27,4 @@ dp(i) 代表爬到第 n 阶处的最小代价，**有两种可能性，要么从
 
    只更新 dp_i1 和 dp_i2 两个位置的值即可
 
-   ![mark](http://owzhgmyq5.bkt.clouddn.com/blog/180925/gcIam07dH3.png)
+   ![mark](http://qnpic.sijihaiyang.top/blog/180925/gcIam07dH3.png)
