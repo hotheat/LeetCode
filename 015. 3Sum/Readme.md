@@ -7,3 +7,5 @@ nums = [-4, -1, -1, 0, 1, 2]
 如果遍历到 i==2 时，判断 nums[2] 是否等于 nums[1]，如果相等，那么直接跳过。
 
 `other.py` 把重复判断放在 if 条件里面，没有在外面进行判断。
+
+[https://www.youtube.com/watch?v=gq-uWp327m8](https://www.youtube.com/watch?v=gq-uWp327m8)

@@ -41,3 +41,5 @@ class Solution:
 if __name__ == '__main__':
     nums = [-4, -1, -1, 0, 1, 2]
     print(Solution().threeSum(nums))
+    nums = [-1, 0, 1, 1, 2, 3]
+    print(Solution().threeSum(nums))

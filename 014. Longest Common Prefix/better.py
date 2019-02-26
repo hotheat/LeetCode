@@ -10,7 +10,6 @@ class Solution:
                 return s
             else:
                 s += i[0]
-
         return s
 
 
