@@ -13,10 +13,11 @@ class Solution:
                     continue
                 else:
                     return False
-
+        # 如果栈中还有元素，返回 False
         return True if not stack else False
 
 
 if __name__ == '__main__':
     s = "]"
+    s = '{}()[]'
     print(Solution().isValid(s))
