@@ -4,6 +4,8 @@
 
 每次移动时，移动数值较矮的指针，
 
+![mark](http://qnpic.sijihaiyang.top/blog/20190301/iAGVbCuCxFhG.png?imageslim)
+
 以 [2, 1, 3, 4] 为例，
 
 如果移动数值较高的指针 right，在移动后如果高度值大于 left，那么低值仍由 left 决定，乘积因为移动而变小了；如果移动后高度小于 Left，这样低值变小，宽度也因为移动变小，会比之前值更小。
