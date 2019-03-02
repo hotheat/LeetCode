@@ -12,9 +12,15 @@ class Solution:
                 res[low] = mul % 10
                 res[high] += mul // 10
 
-        mul = ''.join([str(i) for i in res])
+        i = 0
+        while i < len(res):
+            if res[i] != 0:
+                break
+            else:
+                res.pop(0)
 
-        return '0' if not mul else mul[mul.find('0')+1:]
+        final = ''.join([str(i) for i in res])
+        return '0' if not final else final
 
 
 if __name__ == '__main__':
