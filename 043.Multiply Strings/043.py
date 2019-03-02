@@ -24,4 +24,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print(Solution().multiply('999', '999'))
+    print(Solution().multiply('123', '45'))
