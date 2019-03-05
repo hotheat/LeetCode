@@ -10,11 +10,10 @@ class Solution:
         res[0] = 1
         for i in range(1, len(nums)):
             res[i] = res[i - 1] * nums[i - 1]
-
         mul = 1
-        for i in range(len(nums) - 1, -1, -1):
+        for i in range(len(nums) - 2, -1, -1):
+            mul = mul * nums[i + 1]
             res[i] = res[i] * mul
-            mul = mul * nums[i]
         return res
 
 
