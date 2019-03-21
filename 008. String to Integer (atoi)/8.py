@@ -13,7 +13,7 @@ class Solution:
             # 符合数字
             if v.isdigit():
                 num = ''.join((num, v))
-            # 保证数字是连续出现
+            # 保证数字是连续出现。遇到空格，且 num 是空时，不打断循环
             elif ord(v) == 32 and not num:
                 continue
             else:
@@ -30,6 +30,8 @@ class Solution:
 
 
 if __name__ == '__main__':
-    for s in ['+0 123', '+12 34', "4193 with words", "   -4  2", "words and 987", "-91283472332"]:
-        sl = Solution()
-        print(sl.myAtoi(s))
+    lst = ['+0 123', '+12 34', "4193 with words", "   -4  2", "words and 987", "-91283472332"]
+    # for s in lst[0]:
+    #     sl = Solution()
+    #     print(sl.myAtoi(s))
+    print(Solution().myAtoi(lst[0]))
